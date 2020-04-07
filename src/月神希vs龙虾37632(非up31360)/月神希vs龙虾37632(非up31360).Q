@@ -9,7 +9,7 @@ StopHotkeyMod=0
 RunOnce=1
 EnableWindow=
 MacroID=505b5d64-3b1a-456e-a860-043c439ed9c8
-Description=龙虾(月神s希376323)
+Description=月神希vs龙虾37632(非up31360)
 Enable=0
 AutoRun=0
 [Repeat]
