@@ -188,7 +188,9 @@ End Function
 
 bh3 = Plugin.Window.Find(0,"崩坏3")
 //TracePrint bh3
-sRect = Plugin.Window.GetWindowRect(bh3)
+//sRect = Plugin.Window.GetWindowRect(bh3)
+//TracePrint sRect
+sRect = Plugin.Window.GetClientRect(bh3)
 TracePrint sRect
 dim MyArray   
 MyArray = Split(sRect, "|")
@@ -196,10 +198,7 @@ screenX = Clng(MyArray(0))
 screenY = Clng(MyArray(1))
 screenX2 = Clng(MyArray(2))
 screenY2 = Clng(MyArray(3))
-screenX = ScreenX
-screenY = ScreenY
-screenX2 = ScreenX2
-screenY2 = ScreenY2
+
 
 // 盾条坐标
 dx = -1 
@@ -227,7 +226,7 @@ restartBtn2Y = - 1
 is1080p = False
 is720p = False
 
-If (screenX2 - screenX) >= 1920 Then
+If (screenX2 - screenX) >= 1920 Then 
     is1080p = True
     //盾条位置坐标
     dx = screenX + 562
@@ -244,8 +243,8 @@ If (screenX2 - screenX) >= 1920 Then
     timeY2 = screenY + 200
     
     // 开始图标位置
-    startx = screenX + 67
-    starty = screenY + 190
+    startx = screenX + 68
+    starty = screenY + 160
 
 Else
     is720p = True
@@ -264,9 +263,10 @@ Else
     
     // 开始图标位置
     startx = screenX + 46
-    starty = screenY + 140
+    starty = screenY + 110
     
 End If
+TracePrint "开始图标" + CStr(startx) + "|" + CStr(starty)
 
 TracePrint "时间坐标:" + Cstr(timeX) + "|" + cstr(timeY) + "|" + cstr(timeX2) + "|" + cstr(timeY2)
 
