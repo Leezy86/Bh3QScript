@@ -9,7 +9,7 @@ StopHotkeyMod=0
 RunOnce=1
 EnableWindow=
 MacroID=03615f66-665c-44e0-8ce9-b236b409fb91
-Description=¹íÊ¥ÂÖvsÆ¤Æ¤Âí31733(upºó38080)
+Description=é¬¼åœ£è½®vsçš®çš®é©¬31733(upå38080)
 Enable=1
 AutoRun=0
 [Repeat]
@@ -28,15 +28,15 @@ UEsDBBQAAgAIAEw/CkFpA+Qdl5wLAACQDAAGABEAZG0uZGxsVVQNAAcuvyRQ1npwXrB6cF7s/XlUE8kf
 
 [Script]
 /*
-1p ¹í¿­ À×ÇĞ Ò¶Ò¶Å£
-2p ÔÂÂÖ ëÊ¹â ÄªµÏÅ£
-3p Ê¥Å® ¹í½Ç ºÚÓ¾±´
+1p é¬¼å‡¯ é›·åˆ‡ å¶å¶ç‰›
+2p æœˆè½® èƒ§å…‰ è«è¿ªç‰›
+3p åœ£å¥³ é¬¼è§’ é»‘æ³³è´
 
-ÈËÅ¼·ÂÓÌ´ó
+äººå¶ä»¿çŠ¹å¤§
 */
 
 
-Sub Å·À­(n)
+Sub æ¬§æ‹‰(n)
     KeyPress "j", 1
     Delay (200)
     KeyPress "j", 1
@@ -57,38 +57,38 @@ End Sub
 
 
 
-Function Å·À­1()
+Function æ¬§æ‹‰1()
 
-    Call Å·À­(5)
+    Call æ¬§æ‹‰(5)
     KeyPress "u", 1
     Delay(400)
-    TracePrint "Å·À­1Íê±Ï"
+    TracePrint "æ¬§æ‹‰1å®Œæ¯•"
 
 
 End Function
 
-Function Å·À­2()
+Function æ¬§æ‹‰2()
     Delay (300)
-    Call Å·À­(8)
+    Call æ¬§æ‹‰(8)
 End Function
 
 Sub Main()
     Delay(500)
-    // ¹í¿­ÍùÇ°Ò»²½µ½Æ¤Æ¤Âí³ö³¡Î»ÖÃ
+    // é¬¼å‡¯å¾€å‰ä¸€æ­¥åˆ°çš®çš®é©¬å‡ºåœºä½ç½®
     KeyDown "w", 1
     KeyPress "k", 1
     Delay(300)
     KeyUp "w", 1
 	
-    // ÇĞÔÂÂÖ
+    // åˆ‡æœˆè½®
     KeyPress "1", 1
     Delay(100)
-    // ·Å´óÕĞ
+    // æ”¾å¤§æ‹›
     KeyDown "i", 1
     Delay (2000)
     KeyUp "i", 1
 	
-    // ÇĞÊ¥Å®
+    // åˆ‡åœ£å¥³
     KeyDown "d", 1
     KeyPress "1", 1
     Delay (1250)
@@ -96,20 +96,20 @@ Sub Main()
     KeyPress "k", 1
     Delay (200)
 
-    KeyPress "i", 1// ·Å´óÕĞ
+    KeyPress "i", 1// æ”¾å¤§æ‹›
     Delay (700)
-    KeyPress "l", 1// ÈËÅ¼ÆÆ¶Ü
+    KeyPress "l", 1// äººå¶ç ´ç›¾
     Delay (800)
 
     KeyPress "k", 1
 
     Delay (700)
     KeyUp "d",1
-    //KeyPress "k", 1// ÉÁ±ÜÒ»ÏÂÔ¶ÀëÆ¤Æ¤Âí£¬ÃâµÃ¹í¿­ÏÂÀ´ÔÒµôÒ¶Å£
+    //KeyPress "k", 1// é—ªé¿ä¸€ä¸‹è¿œç¦»çš®çš®é©¬ï¼Œå…å¾—é¬¼å‡¯ä¸‹æ¥ç ¸æ‰å¶ç‰›
     
 	
 	
-    // ÇĞ¹í¿­
+    // åˆ‡é¬¼å‡¯
     KeyDown "a", 1
     //    KeyDown "w", 1
 
@@ -117,10 +117,10 @@ Sub Main()
     Delay (400)
     KeyUp "a", 1
     //    KeyUp "w", 1
-    Delay (900)// µÈÒ»ÏÂÈËÅ¼ÏÂÂä
+    Delay (900)// ç­‰ä¸€ä¸‹äººå¶ä¸‹è½
 	
 	KeyPress "u", 1
-    KeyPress "j", 1// ÈËÅ¼ÔÒÏÂÀ´Ö®Ç°AÒ»ÏÂÉÏÅ£
+    KeyPress "j", 1// äººå¶ç ¸ä¸‹æ¥ä¹‹å‰Aä¸€ä¸‹ä¸Šç‰›
     Delay(300)
 //    KeyPress "j", 1
 //
@@ -132,15 +132,15 @@ Sub Main()
 	
     //KeyPress "j", 1
     //Delay(100)
-    // ÇĞÔÂÂÖÏÂÀ´
+    // åˆ‡æœˆè½®ä¸‹æ¥
     KeyPress "1", 1
     Delay (800)
-    Å·À­1 
-    Å·À­2
+    æ¬§æ‹‰1 
+    æ¬§æ‹‰2
 End Sub
 
 Function pauseEatSp()
-    TracePrint "µôsp£¬ĞèÒªÔİÍ£"
+    TracePrint "æ‰spï¼Œéœ€è¦æš‚åœ"
     PauseThread mainThread
     KeyPress "esc", 1
     Delay (2000)
@@ -153,7 +153,7 @@ End Function
 Sub sendmail()
     set ws=CreateObject("WScript.Shell")
     ws.Run "F:\\GoSendMail\\GoSendMail.exe", 0
-    TracePrint "·¢ËÍÓÊ¼şÌáĞÑ"
+    TracePrint "å‘é€é‚®ä»¶æé†’"
 End Sub
 
 
@@ -163,26 +163,26 @@ Sub Timer()
         If doingTime >= 15000 Then
             dm_ret = dm.FindStr(timeX, timeY, timeX2, timeY2, "0454", "ffffff-000000", 0.8, x, y)
             If x > 0 and y > 0 Then 
-                TracePrint "Ã»³ö·Ö£¬ÖØÆô"
+                TracePrint "æ²¡å‡ºåˆ†ï¼Œé‡å¯"
                 restart
             End If
         EndIf
 
         If doingTime >= 25000 Then 
-            TracePrint "³¬Ê±£¬ÖØÆô"
+            TracePrint "è¶…æ—¶ï¼Œé‡å¯"
             restart
         End If
 		
-        // ¼ì²éÆÆ¶Ü
-        If doingTime >= 9500 Then  // 9ÃëÖÓÖ®ºó¶ÜÌõÓ¦¸ÃÊÇÆÆÁË£¬Ã»ÆÆµÄ»°½øÈëÖØÀ´Á÷³Ì
+        // æ£€æŸ¥ç ´ç›¾
+        If doingTime >= 9500 Then  // 9ç§’é’Ÿä¹‹åç›¾æ¡åº”è¯¥æ˜¯ç ´äº†ï¼Œæ²¡ç ´çš„è¯è¿›å…¥é‡æ¥æµç¨‹
             //			dColor = GetPixelColor(dx, dy)
             If not brokenD  Then 
-                TracePrint "¼ì²éÆÆ¶Ü"
+                TracePrint "æ£€æŸ¥ç ´ç›¾"
 
-                IfColor dx, dy, "41C7FF", 2 Then// ¶ÜÌõ»¹´æÔÚ
-                    TracePrint "ÆÆ¶ÜÊ§°Ü"
+                IfColor dx, dy, "41C7FF", 2 Then// ç›¾æ¡è¿˜å­˜åœ¨
+                    TracePrint "ç ´ç›¾å¤±è´¥"
                     //call writeCheckD(False)
-                    // ½øÈëÖØÀ´Á÷³Ì
+                    // è¿›å…¥é‡æ¥æµç¨‹
 
                     restart
                 Else 
@@ -192,9 +192,9 @@ Sub Timer()
                 End If
             End If
             //            If (Plugin.Sys.GetTime - lastWhiteHealthTime) > 2000 Then 
-            //            	TracePrint "¼ì²éÑªÁ¿"
+            //            	TracePrint "æ£€æŸ¥è¡€é‡"
             //                IfColor healthX, healthY, "ffffff", 2 Then
-            //                    TracePrint "µôÁËÒ»¹ÜÑª"
+            //                    TracePrint "æ‰äº†ä¸€ç®¡è¡€"
             //                    lastWhiteHealthTime = Plugin.Sys.GetTime
             //                    whiteHealthNum = whiteHealthNum + 1
             //                    TracePrint whiteHealthNum
@@ -222,9 +222,9 @@ Function restart()
     datetime = Replace(datetime, ":", "-")
 
     If not brokenD Then 
-        filename = "d:\½ØÍ¼\ÆÆ¶ÜÊ§°Ü\" + datetime + ".jpg"
+        filename = "d:\æˆªå›¾\ç ´ç›¾å¤±è´¥\" + datetime + ".jpg"
     Else 
-        filename = "d:\½ØÍ¼\" + datetime + ".jpg"
+        filename = "d:\æˆªå›¾\" + datetime + ".jpg"
 	
     End If
 	
@@ -243,24 +243,24 @@ Function restart()
     KeyPress "esc", 1
     Delay (1000)
     If restartBtn1X < 0 Then 
-        Call dm.findStr(screenX, screenY, screenX2, screenY2, "ÖØĞÂ¿ªÊ¼", "323232-000000", 0.7, restartBtn1X, restartBtn1Y)    	
+        Call dm.findStr(screenX, screenY, screenX2, screenY2, "é‡æ–°å¼€å§‹", "323232-000000", 0.7, restartBtn1X, restartBtn1Y)    	
     End If
     call dm.MoveTo(restartBtn1X, restartBtn1Y)
     Delay(500)
     leftClick(1)
     Delay (1000)
     If restartBtn2X < 0 Then 
-        Call dm.findStr(screenX, screenY, screenX2, screenY2, "ÖØĞÂ¿ªÊ¼2", "323232-000000", 0.7, restartBtn2X, restartBtn2Y)    	
+        Call dm.findStr(screenX, screenY, screenX2, screenY2, "é‡æ–°å¼€å§‹2", "323232-000000", 0.7, restartBtn2X, restartBtn2Y)    	
     End If
 
     call dm.MoveTo(restartBtn2X, restartBtn2Y)
     Delay 500
-    LeftClick 1     // ²Ù×÷Ö¸Õëµã»÷ÖØ¿ª
+    LeftClick 1     // æ“ä½œæŒ‡é’ˆç‚¹å‡»é‡å¼€
 End Function
 
-/* ×¢²áÊ¶Í¼²å¼ş*/
-PutAttachment "./", "Õ½³¡×Ö¿â720p.txt"
-PutAttachment "./", "Õ½³¡×Ö¿â1080p.txt"
+/* æ³¨å†Œè¯†å›¾æ’ä»¶*/
+PutAttachment "./", "æˆ˜åœºå­—åº“720p.txt"
+PutAttachment "./", "æˆ˜åœºå­—åº“1080p.txt"
 PutAttachment "./", "dm.dll"
 PutAttachment ".\Plugin", "RegDll.dll"
 dmPath = GetExeDir + "dm.dll"
@@ -274,10 +274,10 @@ Set dm = createobject("dm.dmsoft")
 //	TracePrint dm.Ver()
 dm.setpath(GetExeDir)
 
-// Ê¶Í¼²å¼ş×¢²áÍê±Ï
+// è¯†å›¾æ’ä»¶æ³¨å†Œå®Œæ¯•
 //screenX2 = dm.GetscreenX2() 
 //screenY2 = dm.GetscreenY2() 
-bh3 = Plugin.Window.Find(0,"±À»µ3")
+bh3 = Plugin.Window.Find(0,"å´©å3")
 TracePrint bh3
 sRect = Plugin.Window.GetClientRect(bh3)
 TracePrint sRect
@@ -292,94 +292,94 @@ screenY = ScreenY
 screenX2 = ScreenX2
 screenY2 = ScreenY2
 
-// µÚÒ»¸öÖØĞÂ¿ªÊ¼°´Å¥×ø±ê
+// ç¬¬ä¸€ä¸ªé‡æ–°å¼€å§‹æŒ‰é’®åæ ‡
 restartBtn1X = - 1 
 restartBtn1Y = - 1 
 
-// µÚ¶ø¸öÖØĞÂ¿ªÊ¼°´Å¥×ø±ê
+// ç¬¬è€Œä¸ªé‡æ–°å¼€å§‹æŒ‰é’®åæ ‡
 restartBtn2X = - 1 
 restartBtn2Y = - 1 
 
 
 
-// ¶ÜÌõ×ø±ê
+// ç›¾æ¡åæ ‡
 dx = -1 
 dy = -1
 
-// ÑªÌõÎ»ÖÃ
+// è¡€æ¡ä½ç½®
 healthX = -1
 healthY = - 1 
 
-// Ê±¼ä·¶Î§×ø±ê
+// æ—¶é—´èŒƒå›´åæ ‡
 timeX = - 1 
 timeY = -1
 timeX2 = - 1 
 timeY2 = -1
 
-// ÅĞ¶Ï´°¿Ú·Ö±æÂÊ
+// åˆ¤æ–­çª—å£åˆ†è¾¨ç‡
 is1080p = False
 is720p = False
 
 
 If (screenX2 - screenX) >= 1920 Then
     is1080p = True
-    dm_ret = dm.SetDict(0,"Õ½³¡×Ö¿â1080p.txt")
-    //¶ÜÌõÎ»ÖÃ×ø±ê
+    dm_ret = dm.SetDict(0,"æˆ˜åœºå­—åº“1080p.txt")
+    //ç›¾æ¡ä½ç½®åæ ‡
     dx = screenX + 558
     dy = screenY + 56
 	
-    //ÑªÌõÎ»ÖÃ×ø±ê
+    //è¡€æ¡ä½ç½®åæ ‡
     healthX = screenX + 568
     healthY = screenY + 29
 	
-    // Ê±¼ä·¶Î§×ø±ê
+    // æ—¶é—´èŒƒå›´åæ ‡
     timeX = screenX + 864
     timeY = screenY + 93
     timeX2 = screenX + 995
     timeY2 = screenY + 149
     
-    // ¿ªÊ¼Í¼±êÎ»ÖÃ
+    // å¼€å§‹å›¾æ ‡ä½ç½®
     startx = screenX + 68
     starty = screenY + 160
     
-    // ÖØĞÂ¿ªÊ¼°´Å¥Î»ÖÃ
+    // é‡æ–°å¼€å§‹æŒ‰é’®ä½ç½®
     restartBtn1X = screenX + 568
     restartBtn1Y = screenY + 987
     
-    // ÖØĞÂ¿ªÊ¼È·ÈÏ°´Å¥Î»ÖÃ
+    // é‡æ–°å¼€å§‹ç¡®è®¤æŒ‰é’®ä½ç½®
     restartBtn2X = screenX + 685 
 	restartBtn2Y = screenY + 755
 
 Else
     is720p = True
-    dm_ret = dm.SetDict(0,"Õ½³¡×Ö¿â720p.txt")
-    //¶ÜÌõÎ»ÖÃ×ø±ê
+    dm_ret = dm.SetDict(0,"æˆ˜åœºå­—åº“720p.txt")
+    //ç›¾æ¡ä½ç½®åæ ‡
     dx = screenX + 373
     dy = screenY + 38
-    //ÑªÌõÎ»ÖÃ×ø±ê
+    //è¡€æ¡ä½ç½®åæ ‡
     healthX = screenX + 380
     healthY = screenY + 22
-    // Ê±¼ä·¶Î§×ø±ê
+    // æ—¶é—´èŒƒå›´åæ ‡
     timeX = screenX + 575
     timeY = screenY + 57
     timeX2 = screenX + 662
     timeY2 = screenY + 97
     
-    // ¿ªÊ¼Í¼±êÎ»ÖÃ
+    // å¼€å§‹å›¾æ ‡ä½ç½®
     startx = screenX + 46
     starty = screenY + 110
     
-    // ÖØĞÂ¿ªÊ¼°´Å¥Î»ÖÃ
+    // é‡æ–°å¼€å§‹æŒ‰é’®ä½ç½®
     restartBtn1X = screenX + 403
     restartBtn1Y = screenY + 657
     
-    // ÖØĞÂ¿ªÊ¼È·ÈÏ°´Å¥Î»ÖÃ
+    // é‡æ–°å¼€å§‹ç¡®è®¤æŒ‰é’®ä½ç½®
     restartBtn2X = screenX + 453 
 	restartBtn2Y = screenY + 508
 
 End If
 
-TracePrint "Ê±¼ä×ø±ê:" + Cstr(timeX) + "|" + cstr(timeY) + "|" + cstr(timeX2) + "|" + cstr(timeY2)
+TracePrint "æ—¶é—´åæ ‡:" + Cstr(timeX) + "|" + cstr(timeY) + "|" + cstr(timeX2) + "|" + cstr(timeY2)
 
 
 Global startTime
@@ -399,16 +399,16 @@ While 1
         StopThread mainThread
 
         timeStartFlag = True
-        brokenD = False // ÊÇ·ñÒÑ¾­ÆÆ¶Ü
+        brokenD = False // æ˜¯å¦å·²ç»ç ´ç›¾
         gotSp1 = False
         gtoSp2 = False
         mainThread = BeginThread(Main)
         startTime = Plugin.Sys.GetTime
         
-        whiteHealthNum = 0// ÒÑ¾­´òµôµÄÑªÌõ¼ÆÊı
-        lastWhiteHealthTime = -1 // ÉÏÒ»´Î°×ÑªµÄÊ±¼ä, -1±íÊ¾Ã»ÓĞÉÏ´Î
+        whiteHealthNum = 0// å·²ç»æ‰“æ‰çš„è¡€æ¡è®¡æ•°
+        lastWhiteHealthTime = -1 // ä¸Šä¸€æ¬¡ç™½è¡€çš„æ—¶é—´, -1è¡¨ç¤ºæ²¡æœ‰ä¸Šæ¬¡
         Call timer()
-        Delay(5000)
+        Delay(2000)
     End If
 Wend
 
