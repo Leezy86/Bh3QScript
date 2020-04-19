@@ -408,7 +408,7 @@ While 1
         whiteHealthNum = 0// 已经打掉的血条计数
         lastWhiteHealthTime = -1 // 上一次白血的时间, -1表示没有上次
         Call timer()
-        Delay(5000)
+        Delay(2000)
     End If
 Wend
 
