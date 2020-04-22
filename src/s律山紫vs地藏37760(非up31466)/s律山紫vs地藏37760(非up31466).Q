@@ -9,7 +9,7 @@ StopHotkeyMod=0
 RunOnce=1
 EnableWindow=
 MacroID=2cb2d777-c879-4612-b642-28c693378e00
-Description=s律山紫vs地藏31466_自动版
+Description=s律山紫vs地藏37760(非up31466)
 Enable=0
 AutoRun=0
 [Repeat]
