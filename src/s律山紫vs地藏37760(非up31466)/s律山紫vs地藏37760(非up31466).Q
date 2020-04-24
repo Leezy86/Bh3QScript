@@ -330,15 +330,15 @@ sub Timer()
         End If
         
         // 判断是否出分
-        If doingTime >= 27000 Then 
-			Call FindPic(timeX, timeY, timeX2, timeY2, time47path, 0.7, intX_2, intY_2)
-			TracePrint "判断是否出分"
-            If intX_2 > 0 Then 
-                Delay(2000)
-                TracePrint "没有出分，重启"
-                restart
-            End If
-        End If
+        //If doingTime >= 37000 Then 
+		//	Call FindPic(timeX, timeY, timeX2, timeY2, time47path, 0.7, intX_2, intY_2)
+		//	TracePrint "判断是否出分"
+        //    If intX_2 > 0 Then 
+        //        Delay(2000)
+        //        TracePrint "没有出分，重启"
+        //        restart
+        //    End If
+        //End If
         
         // 找出血条位置
         //        If healthX <= 0  Then 
